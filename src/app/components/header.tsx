@@ -16,55 +16,106 @@ export default function Header(){
   
     const headerRef = useRef<HTMLElement>(null); 
 
-    useEffect(() => { 
-      let prevScrollPos = window.scrollY; 
-    
-      const handleScroll = () => { 
-        const currentScrollPos = window.scrollY; 
-        const headerElement = headerRef.current; 
-        if (!headerElement) { 
-          return; 
-        } 
-     
-        if(headerElement){
-          if(currentScrollPos > 0){
+    useEffect(() => {
+      // Ensure this runs only on the client side
+      if (typeof window !== 'undefined') {
+        let prevScrollPos = window.scrollY;
+  
+        const handleScroll = () => {
+          const currentScrollPos = window.scrollY;
+          const headerElement = headerRef.current;
+  
+          if (!headerElement) return;
+  
+          // Add or remove the 'scrolled' class based on scroll position
+          if (currentScrollPos > 0) {
             headerElement.classList.add('scrolled');
-          }else{
+          } else {
             headerElement.classList.remove('scrolled');
           }
-
-            if (prevScrollPos > currentScrollPos) { 
-                headerElement.style.transform = "translateY(0)"; 
-            } else { 
-                headerElement.style.transform = "translateY(-200px)"; 
-            } 
-              prevScrollPos = currentScrollPos; 
-        }
-
-        
-      } 
-      window.addEventListener('scroll', handleScroll) 
-    
-      return () => { 
-        window.removeEventListener('scroll', handleScroll) 
-        
-      } 
-
-    }, []); 
-
-
-    window.addEventListener("load", () =>{
-      const scrollPos = window.scrollY; 
-      const siteheader = headerRef.current; 
-
-    if(siteheader){
-      if(scrollPos > 0){
-        siteheader.classList.add('scrolled');
-      }else{
-        siteheader.classList.remove('scrolled');
+  
+          // Show/hide header based on scroll direction
+          if (prevScrollPos > currentScrollPos) {
+            headerElement.style.transform = 'translateY(0)';
+          } else {
+            headerElement.style.transform = 'translateY(-200px)';
+          }
+  
+          prevScrollPos = currentScrollPos;
+        };
+  
+        const handleLoad = () => {
+          const scrollPos = window.scrollY;
+          const siteheader = headerRef.current;
+  
+          if (siteheader) {
+            if (scrollPos > 0) {
+              siteheader.classList.add('scrolled');
+            } else {
+              siteheader.classList.remove('scrolled');
+            }
+          }
+        };
+  
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('load', handleLoad);
+  
+        // Cleanup function
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+          window.removeEventListener('load', handleLoad);
+        };
       }
-    }
-    });
+    }, []);
+  
+    // useEffect(() => { 
+    //   let prevScrollPos = window.scrollY; 
+    
+    //   const handleScroll = () => { 
+    //     const currentScrollPos = window.scrollY; 
+    //     const headerElement = headerRef.current; 
+    //     if (!headerElement) { 
+    //       return; 
+    //     } 
+     
+    //     if(headerElement){
+    //       if(currentScrollPos > 0){
+    //         headerElement.classList.add('scrolled');
+    //       }else{
+    //         headerElement.classList.remove('scrolled');
+    //       }
+
+    //         if (prevScrollPos > currentScrollPos) { 
+    //             headerElement.style.transform = "translateY(0)"; 
+    //         } else { 
+    //             headerElement.style.transform = "translateY(-200px)"; 
+    //         } 
+    //           prevScrollPos = currentScrollPos; 
+    //     }
+
+    //   } 
+    //   window.addEventListener('scroll', handleScroll) 
+    
+    //   return () => { 
+    //     window.removeEventListener('scroll', handleScroll) 
+        
+    //   } 
+
+    // }, []); 
+
+
+    // window.addEventListener("load", () =>{
+    //   const scrollPos = window.scrollY; 
+    //   const siteheader = headerRef.current; 
+
+    // if(siteheader){
+    //   if(scrollPos > 0){
+    //     siteheader.classList.add('scrolled');
+    //   }else{
+    //     siteheader.classList.remove('scrolled');
+    //   }
+    // }
+    // });
 
    
 
