@@ -6,7 +6,7 @@ import Header from "./components/header";
 import Banner from "./components/Banner";
 import LangListBox from "./components/LangListBox";
 import Projects from "./components/Projects";
-//import ContactSection from "./components/Contact";
+import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
 import MenuSidebar from "./components/MenuSidebar";
 import { useState } from "react";
@@ -33,7 +33,7 @@ export default function Home() {
       <Banner/>
       <LangListBox/>
       <Projects/>
-      {/* <ContactSection/> */}
+      <ContactSection/>
       <Footer/>
       </main>
       
