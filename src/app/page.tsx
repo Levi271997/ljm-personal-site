@@ -8,7 +8,7 @@ import LangListBox from "./components/LangListBox";
 import Projects from "./components/Projects";
 //import ContactSection from "./components/Contact";
 //import Footer from "./components/Footer";
-import MenuSidebar from "./components/MenuSidebar";
+//import MenuSidebar from "./components/MenuSidebar";
 import { useState } from "react";
 import  {MenuContextProvider }  from './contexts/menucontext';
 import {useMenuContext} from './contexts/menucontext';
@@ -21,7 +21,7 @@ export default function Home() {
     <MenuContextProvider>
     <div className="relative">
      
-     <MenuSidebar/>
+     {/* <MenuSidebar/> */}
      
       <main>
         {/* <MenuContext.Provider value={menuClicked}>
