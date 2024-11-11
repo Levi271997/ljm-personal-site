@@ -54,7 +54,7 @@ export default function Header(){
 
 
     window.addEventListener("load", () =>{
-      let scrollPos = window.scrollY; 
+      const scrollPos = window.scrollY; 
       const siteheader = headerRef.current; 
 
     if(siteheader){

@@ -33,7 +33,7 @@ export default function NotFound() {
       <section className="px-5">
         <div className="max-w-pagewidth mx-auto">
             <div className="pt-48 flex flex-col justify-center items-center">
-                <h2 className="text-center text-4xl sm:text-5xl md:text-7xl">Oops, Sorry that page didn't exist</h2>
+                <h2 className="text-center text-4xl sm:text-5xl md:text-7xl">Oops, Sorry that page didn&apos;t exist</h2>
                 <p className="text-center text-2xl mt-16">You may want to go back to home</p>
                 <Link href="/" className=" btn mt-9 uppercase">go to home</Link>
             </div>

@@ -55,7 +55,7 @@ export default function Home() {
                             <p className="mb-5">As a wordpress web developer my roles are:</p> 
                             <p className="pl-8 job-roles relative mb-3">Uploading content to client websites and ensuring that all content adheres to SEO best practices to enhance search rankings.</p>
                             <p className="pl-8 job-roles relative mb-3">develop new websites based on provided designs and client feedback, with a focus on optimizing site performance for faster loading times.</p>
-                            <p className="pl-8 job-roles relative mb-3">Perform maintenance to client's wordpress sites to ensure plugins and themes are up to date</p>
+                            <p className="pl-8 job-roles relative mb-3">Perform maintenance to client&apos;s wordpress sites to ensure plugins and themes are up to date</p>
                             <p className="pl-8 job-roles relative">Debug errors when seen upfront</p>
                           </div>
 
@@ -102,7 +102,7 @@ export default function Home() {
                             <p className="mb-5">As a wordpress web developer my roles are:</p> 
                             <p className="pl-8 job-roles relative mb-3">Build new websites using different page builders to create visually stunning websites </p>
                             <p className="pl-8 job-roles relative mb-3">Debug errors when seen upfront</p>
-                            <p className="pl-8 job-roles relative mb-3">Perform maintenance to client's wordpress sites to ensure plugins and themes are up to date</p> 
+                            <p className="pl-8 job-roles relative mb-3">Perform maintenance to client&apos;s wordpress sites to ensure plugins and themes are up to date</p> 
                           </div>
                           <div className="absolute w-[40px] h-[40px] bottom-[-20px] left-1/2  md:left-[-60px] -translate-x-1/2 md:translate-x-0 rounded-full bg-clr-D9D9D9 text-black flex items-center justify-center">
                         <ControlledIcons 
