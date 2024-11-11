@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown,faChevronRight, faCheck, faCircleXmark, faBars, faX, faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import{ faBars, faX, faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faWhatsapp, faFreeCodeCamp, faCodepen } from '@fortawesome/free-brands-svg-icons';
 
 type SelectedSelectType = {

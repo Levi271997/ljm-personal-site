@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useContext } from 'react';
+import React from 'react';
 
 import ControlledIcons from './icons';
 import SocialsLinks from './Socials';
@@ -68,16 +68,16 @@ export default function Header(){
 
    
 
-    const handleAnchorClick = (anchor:any) => () => { 
-        const id = `${anchor}-section`; 
-        const element = document.getElementById(id); 
-        if (element) { 
-          element.scrollIntoView({ 
-            behavior: "smooth", 
-            block: "start", 
-          }); 
-        } 
-      }; 
+    // const handleAnchorClick = (anchor:any) => () => { 
+    //     const id = `${anchor}-section`; 
+    //     const element = document.getElementById(id); 
+    //     if (element) { 
+    //       element.scrollIntoView({ 
+    //         behavior: "smooth", 
+    //         block: "start", 
+    //       }); 
+    //     } 
+    //   }; 
 
 
     const handleMenuClick=()=>{

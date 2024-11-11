@@ -3,7 +3,7 @@
 import Header from "../components/header";
 //import { useState } from "react";
 import { MenuContextProvider } from "../contexts/menucontext";
-import { useMenuContext } from "../contexts/menucontext";
+//import { useMenuContext } from "../contexts/menucontext";
 import MenuSidebar from "../components/MenuSidebar";
 import Image from "next/image";
 import SelfImage from "../images/self-portrait.jpg";
@@ -11,7 +11,7 @@ import ControlledIcons from "../components/icons";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  const {menuClicked, setMenuClicked} = useMenuContext();
+  //const {menuClicked, setMenuClicked} = useMenuContext();
 
   return (
     <MenuContextProvider>

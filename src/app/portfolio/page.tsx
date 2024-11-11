@@ -3,14 +3,14 @@
 import Header from "../components/header";
 //import { useState } from "react";
 import { MenuContextProvider } from "../contexts/menucontext";
-import { useMenuContext } from "../contexts/menucontext";
+//import { useMenuContext } from "../contexts/menucontext";
 import MenuSidebar from "../components/MenuSidebar";
 import { ProjectGrid } from "../components/Projects";
 import Footer from "../components/Footer";
 
 
 export default function Home() {
-  const {menuClicked, setMenuClicked} = useMenuContext();
+  //const {menuClicked, setMenuClicked} = useMenuContext();
 
   return (
     <MenuContextProvider>
