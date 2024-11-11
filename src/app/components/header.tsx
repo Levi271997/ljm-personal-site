@@ -12,7 +12,7 @@ import Link from 'next/link';
 export default function Header(){
 
   const {menuClicked, setMenuClicked} = useMenuContext();
-    const headerRef = useRef<HTMLElement>(null); 
+    //const headerRef = useRef<HTMLElement>(null); 
     // useEffect(() => {
       
     //     let prevScrollPos = window.scrollY;
@@ -72,7 +72,7 @@ export default function Header(){
       }
 
     return(
-        <header className="w-full px-[20px] absolute translate-y-0 transition-all duration-300 ease-in-out z-20 "  ref={headerRef}>
+        <header className="w-full px-[20px] absolute translate-y-0 transition-all duration-300 ease-in-out z-20 " >
             <div className="max-w-pagewidth m-auto">
                 <div className="flex justify-between items-center pt-[43px] headerbox transition-all duration-300 ease-in-out">
                     <div className='text-[32px] flex items-center gap-5'>
