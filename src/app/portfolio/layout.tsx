@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import "../globals.css";
- import { SpaceGrotesk } from "../components/fontsconfigure";
+// import { SpaceGrotesk } from "../components/fontsconfigure";
 
 // import localFont from "next/font/local";
 
