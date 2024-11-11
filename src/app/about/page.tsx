@@ -22,7 +22,7 @@ export default function Home() {
       <main>
     
       <Header/>
-      <section className="px-5 pt-36">
+      <section className="px-5 pt-36 homebanner">
             <div className="max-w-pagewidth  mx-auto">
                 <div> <h1 className="text-6xl">About Me</h1></div>
                 <div className="flex justify-between flex-col-reverse md:flex-row items-center gap-5 mt-10">
@@ -37,9 +37,9 @@ export default function Home() {
        </section>
 
 
-       <section className="px-5">
+       <section className="px-5 pt-36 langsection">
             <div className="max-w-pagewidth  mx-auto">
-               <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mt-36 mb-10">Work Experience</h1>
+               <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mb-10">Work Experience</h1>
                 <div className="flex flex-col md:flex-row mt-5">
                     <div className="w-full md:w-1/2 border-r-0 md:border-r pr-0 md:pr-10">
                       <div className="pb-14 md:pb-16 border-b  alternate-block relative">
@@ -126,9 +126,9 @@ export default function Home() {
             </div>
        </section>
       
-       <section className="px-5 pb-36">
+       <section className="px-5 pb-36 pt-36 homebanner">
             <div className="max-w-pagewidth  mx-auto">
-               <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mt-36 mb-10">Educational Attainment</h1>
+               <h1 className="text-2xl sm:text-3xl md:text-4xl text-center mb-10">Educational Attainment</h1>
                 <div className="flex flex-col md:flex-row mt-5">
                     <div className="w-full md:w-1/2 border-r-0 md:border-r pr-0 md:pr-10">
                       <div className="pb-14 md:pb-16 border-b  alternate-block relative">

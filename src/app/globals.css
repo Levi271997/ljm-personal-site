@@ -41,6 +41,9 @@ body {
 .homebanner{
   background: url('../app/images/oval-left.svg') left  137px / 530px 129px no-repeat #151515;
 }
+.sec1{
+  background: url('../app/images/oval-left.svg') left  137px / 530px 129px no-repeat transparent;
+}
 
 .langsection{
   background: url('../app/images/oval-right.svg') right  165px / 530px 129px no-repeat #151515;
