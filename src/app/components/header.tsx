@@ -13,47 +13,47 @@ export default function Header(){
 
   const {menuClicked, setMenuClicked} = useMenuContext();
     const headerRef = useRef<HTMLElement>(null); 
-    useEffect(() => {
+    // useEffect(() => {
       
-        let prevScrollPos = window.scrollY;
-        const handleScroll = () => {
-          const currentScrollPos = window.scrollY;
-          const headerElement = headerRef.current;
-          if (!headerElement) return;
-          if (currentScrollPos > 0) {
-            headerElement.classList.add('scrolled');
-          } else {
-            headerElement.classList.remove('scrolled');
-          }
-          if (prevScrollPos > currentScrollPos) {
-            headerElement.style.transform = 'translateY(0)';
-          } else {
-            headerElement.style.transform = 'translateY(-200px)';
-          }
-          prevScrollPos = currentScrollPos;
-        };
+    //     let prevScrollPos = window.scrollY;
+    //     const handleScroll = () => {
+    //       const currentScrollPos = window.scrollY;
+    //       const headerElement = headerRef.current;
+    //       if (!headerElement) return;
+    //       if (currentScrollPos > 0) {
+    //         headerElement.classList.add('scrolled');
+    //       } else {
+    //         headerElement.classList.remove('scrolled');
+    //       }
+    //       if (prevScrollPos > currentScrollPos) {
+    //         headerElement.style.transform = 'translateY(0)';
+    //       } else {
+    //         headerElement.style.transform = 'translateY(-200px)';
+    //       }
+    //       prevScrollPos = currentScrollPos;
+    //     };
   
-        const handleLoad = () => {
-          const scrollPos = window.scrollY;
-          const siteheader = headerRef.current;
+    //     const handleLoad = () => {
+    //       const scrollPos = window.scrollY;
+    //       const siteheader = headerRef.current;
   
-          if (siteheader) {
-            if (scrollPos > 0) {
-              siteheader.classList.add('scrolled');
-            } else {
-              siteheader.classList.remove('scrolled');
-            }
-          }
-        };
+    //       if (siteheader) {
+    //         if (scrollPos > 0) {
+    //           siteheader.classList.add('scrolled');
+    //         } else {
+    //           siteheader.classList.remove('scrolled');
+    //         }
+    //       }
+    //     };
   
-        window.addEventListener('scroll', handleScroll);
-        window.addEventListener('load', handleLoad);
-        return () => {
-          window.removeEventListener('scroll', handleScroll);
-          window.removeEventListener('load', handleLoad);
-        };
+    //     window.addEventListener('scroll', handleScroll);
+    //     window.addEventListener('load', handleLoad);
+    //     return () => {
+    //       window.removeEventListener('scroll', handleScroll);
+    //       window.removeEventListener('load', handleLoad);
+    //     };
       
-    }, []);
+    // }, []);
   
 
     // const handleAnchorClick = (anchor:any) => () => { 
@@ -72,7 +72,7 @@ export default function Header(){
       }
 
     return(
-        <header className="w-full px-[20px] fixed top-0 left-0 right-0 translate-y-0 transition-all duration-300 ease-in-out z-20 "  ref={headerRef}>
+        <header className="w-full px-[20px] absolute translate-y-0 transition-all duration-300 ease-in-out z-20 "  ref={headerRef}>
             <div className="max-w-pagewidth m-auto">
                 <div className="flex justify-between items-center pt-[43px] headerbox transition-all duration-300 ease-in-out">
                     <div className='text-[32px] flex items-center gap-5'>

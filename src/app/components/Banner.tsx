@@ -6,7 +6,7 @@ const Banner = () =>{
         <section className="homebanner w-full px-5">
             <div className="max-w-pagewidth mx-auto">
                 <div className="flex flex-col-reverse md:flex-row">
-                    <div className="basis-24 md:basis-[709px] w-full mr-[-39px] z-[1] pt-10 md:pt-[202px] flex flex-col items-center md:items-start">
+                    <div className="basis-24 md:basis-[709px] w-full mr-[-39px] z-[1] pt-10 md:pt-[202px] flex flex-col items-center md:items-start mt-32 md:mt-0">
                     <h1 className="text-[38px] sm:text-[48px] md:text-[58px] lg:text-[72px] text-center md:text-left leading-none tracking-[-2.5px]">Nice to meet you! <br /> I&apos;m <span className="marked-heading relative">Levi.</span></h1>
                         <p className="mt-[37px] max-w-[445px] text-center md:text-left">Based in the Philippines, I’m a front-end developer passionate about building accessible web apps that users love.</p>
                         <div className="flex gap-5">
@@ -14,7 +14,7 @@ const Banner = () =>{
                             <a href="https://calendly.com/levijanmartz27/30min" target="_blank" className="block uppercase mt-[66px] btn">Book a call</a>
                         </div>
                     </div>
-                    <div className="bg-clr-242424 flex items-end h-[450px] sm:h-[600px] md:h-[566px] lg:h-[720px] w-full md:w-[445px] justify-center">
+                    <div className="bg-clr-242424 items-end h-[450px] sm:h-[600px] md:h-[566px] lg:h-[720px] w-full md:w-[445px] justify-center hidden md:flex">
                         <Image src={selfpic} alt="levi" width={445} height={620} className="grayscale"/>
                     </div>
                 </div>
