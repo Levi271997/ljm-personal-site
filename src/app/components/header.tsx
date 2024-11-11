@@ -53,7 +53,7 @@ export default function Header(){
     }, []); 
 
 
-    window.addEventListener("load", (event) =>{
+    window.addEventListener("load", () =>{
       let scrollPos = window.scrollY; 
       const siteheader = headerRef.current; 
 

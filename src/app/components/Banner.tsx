@@ -7,7 +7,7 @@ const Banner = () =>{
             <div className="max-w-pagewidth mx-auto">
                 <div className="flex flex-col-reverse md:flex-row">
                     <div className="basis-24 md:basis-[709px] w-full mr-[-39px] z-[1] pt-10 md:pt-[202px] flex flex-col items-center md:items-start">
-                        <h1 className="text-[38px] sm:text-[48px] md:text-[58px] lg:text-[72px] text-center md:text-left leading-none tracking-[-2.5px]">Nice to meet you! <br/> I'm <span className="marked-heading relative">Levi.</span></h1>
+                    <h1 className="text-[38px] sm:text-[48px] md:text-[58px] lg:text-[72px] text-center md:text-left leading-none tracking-[-2.5px]">Nice to meet you! <br /> I&apos;m <span className="marked-heading relative">Levi.</span></h1>
                         <p className="mt-[37px] max-w-[445px] text-center md:text-left">Based in the Philippines, I’m a front-end developer passionate about building accessible web apps that users love.</p>
                         <div className="flex gap-5">
                             <a href="https://api.whatsapp.com/send?phone=+639677015147" target="_blank" className="block uppercase mt-[66px] btn">Contact me</a>

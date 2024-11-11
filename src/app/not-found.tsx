@@ -1,21 +1,21 @@
 'use client'
 
-import Image from "next/image";
-import localFont from "next/font/local";
+// import Image from "next/image";
+// import localFont from "next/font/local";
 //import Header from "./components/header";
-import Banner from "./components/Banner";
-import LangListBox from "./components/LangListBox";
-import Projects from "./components/Projects";
+// import Banner from "./components/Banner";
+// import LangListBox from "./components/LangListBox";
+// import Projects from "./components/Projects";
 //import ContactSection from "./components/Contact";
 //import Footer from "./components/Footer";
 //import MenuSidebar from "./components/MenuSidebar";
-import { useState } from "react";
+//import { useState } from "react";
 import  {MenuContextProvider }  from './contexts/menucontext';
-import {useMenuContext} from './contexts/menucontext';
+///import {useMenuContext} from './contexts/menucontext';
 import Link from "next/link";
 
 export default function NotFound() {
-  const {menuClicked, setMenuClicked} = useMenuContext();
+ // const {menuClicked, setMenuClicked} = useMenuContext();
 
   return (
     <MenuContextProvider>
