@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import localFont from "next/font/local";
-import Header from "./components/header";
+//import Header from "./components/header";
 import Banner from "./components/Banner";
 import LangListBox from "./components/LangListBox";
 import Projects from "./components/Projects";
-import ContactSection from "./components/Contact";
-import Footer from "./components/Footer";
+//import ContactSection from "./components/Contact";
+//import Footer from "./components/Footer";
 import MenuSidebar from "./components/MenuSidebar";
 import { useState } from "react";
 import  {MenuContextProvider }  from './contexts/menucontext';
@@ -29,12 +29,12 @@ export default function Home() {
             </MenuContext.Provider> */}
       
     
-      <Header/>
+      {/* <Header/> */}
       <Banner/>
       <LangListBox/>
       <Projects/>
       {/* <ContactSection/> */}
-      <Footer/>
+      {/* <Footer/> */}
       </main>
       
     </div>
