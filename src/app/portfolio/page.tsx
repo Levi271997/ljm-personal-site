@@ -5,7 +5,7 @@ import Header from "../components/header";
 import { MenuContextProvider } from "../contexts/menucontext";
 import { useMenuContext } from "../contexts/menucontext";
 import MenuSidebar from "../components/MenuSidebar";
-import Projects, { ProjectGrid } from "../components/Projects";
+import { ProjectGrid } from "../components/Projects";
 import Footer from "../components/Footer";
 
 
