@@ -27,13 +27,14 @@ export default function Home() {
                 <div> <h1 className="text-6xl">About Me</h1></div>
                 <div className="flex justify-between flex-col-reverse md:flex-row items-center gap-5 mt-10">
                 <div className="max-w-[700px]">
-                    <p className="mb-2">
-                      As a seasoned WordPress developer, I, Levi, have taken a non-traditional path to get to where I am today. Due to financial constraints and a challenging job market, I initially took on a role as a sales assistant at a retail store. The pandemic in 2020 further exacerbated the economic downturn, making it even harder to find employment. However, after a year and a half, I seized an opportunity to join a friend&apos;s company, where I refined my web development skills, focusing on HTML and CSS to create visually appealing websites.
-                    </p>
-                    <p>
-                      With three years of experience under my belt, I recognized the need to upskill and adapt to the rapidly evolving tech landscape. I enrolled in a paid course on Coursera to learn React, a popular JavaScript framework developed by Meta. I was impressed by its capabilities and am now committed to becoming a front-end engineer.
-                    </p>
-                  </div>
+  <p className="mb-2">
+    As a seasoned WordPress developer, I, Levi, have taken a non-traditional path to get to where I am today. Due to financial constraints and a challenging job market, I initially took on a role as a sales assistant at a retail store. The pandemic in 2020 further exacerbated the economic downturn, making it even harder to find employment. However, after a year and a half, I seized an opportunity to join a friend&apos;s company, where I refined my web development skills, focusing on HTML and CSS to create visually appealing websites.
+  </p>
+  <p>
+    With three years of experience under my belt, I recognized the need to upskill and adapt to the rapidly evolving tech landscape. I enrolled in a paid course on Coursera to learn React, a popular JavaScript framework developed by Meta. I was impressed by its capabilities and am now committed to becoming a front-end engineer.
+  </p>
+</div>
+
 
                   <Image src={SelfImage} alt="levi" width={300} height={300}/>
                 </div>
