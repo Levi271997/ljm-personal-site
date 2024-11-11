@@ -20,7 +20,7 @@ export default function Home() {
       <main>
     
       <Header/>
-      <section className="px-5 pb-10 md:pb-36">
+      <section className="px-5 pb-10 md:pb-36 sec1">
           <div className="max-w-pagewidth mx-auto">
             <div className="pt-36">
             <h1 className="text-[40px] sm:text-[60px] md:text-[88px] leading-none tracking-[-2.5px] mb-10 md:mb-20">Contact</h1>
