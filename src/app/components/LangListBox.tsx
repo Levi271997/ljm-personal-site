@@ -21,11 +21,11 @@ const LangListBox = () => {
         },
         {
             name:'React',
-            desc: '1 years experience'
+            desc: '1 year experience'
         },
         {
             name:'Sass',
-            desc: '1 years experience'
+            desc: '1 year experience'
         },
     ]
 
