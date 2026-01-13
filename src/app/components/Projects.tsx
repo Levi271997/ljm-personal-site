@@ -44,7 +44,7 @@ export const ProjectGrid:React.FC<projectProps>=({ limit })=>{
         {
             imageUrl: rejuve,
             projectTitle: 'Rejuve Cosmetics',
-            projectUrl:'https://rejuvecosmedev.wpenginepowered.com/',
+            projectUrl:'https://rejuvecosmetix.com.au/',
             githubUrl:'',
             techstack: ["wordpress" ,"acf", "html", "css","sass", "webpack", "javascript"]
         },
